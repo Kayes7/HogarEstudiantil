@@ -6,6 +6,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
   height: 100%;
   margin: 0;
@@ -13,6 +14,7 @@ body {
   padding: 0;
   width: 100%;
 }
+
 
 div#main {
   display: flex;
@@ -58,6 +60,9 @@ h2 {
   font-weight: 400;
   margin: 0;
   padding-top: 1rem;
+}
+#home h1, #home h2{
+  color: white;
 }
 
 h3 {
@@ -123,3 +128,15 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+/*Add a slide in animation*/
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
